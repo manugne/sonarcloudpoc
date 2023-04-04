@@ -1,0 +1,6 @@
+<aura:component implements="flexipage:availableForAllPageTypes">
+	<aura:attribute name="myCode" type="String" />
+    <aura:registerEvent name="shahAppEvt" type="c:shahAppEvent"/>
+    <ui:inputText label="Enter Your Code" value="{!v.myCode}"/>
+    <ui:button label="Submit" press="{!c.doFire}"/>
+</aura:component>

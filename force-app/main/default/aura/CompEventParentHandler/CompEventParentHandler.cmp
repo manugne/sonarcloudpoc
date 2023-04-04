@@ -1,0 +1,8 @@
+<aura:component implements="flexipage:availableForAllPageTypes">
+    <aura:attribute name="myResult" type="String"/>
+        <aura:handler event="c:shahCompEvent"  action="{!c.doHandle}" name="mySampleCompEvt"/>	
+     <c:CompEventChild />
+    <hr/>
+    <br/>
+    <ui:outputText value="{!v.myResult}" class="shahResult"/>
+</aura:component>

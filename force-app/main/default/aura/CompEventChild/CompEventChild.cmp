@@ -1,0 +1,6 @@
+<aura:component >
+    <aura:attribute name="myChar" type="String" default="Z"/>
+    <aura:registerEvent name="mySampleCompEvt" type="c:shahCompEvent"/>
+    <ui:inputText label="Enter Your fav Char" value="{!v.myChar}"/>
+    <ui:button label="Submit" press="{!c.doSubmit}"/>
+</aura:component>
